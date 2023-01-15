@@ -137,3 +137,4 @@ __azurite_db*__.json
 # Terraform 
 .terraform.lock.hcl
 .terraform
+terraform.tfstate.backup
