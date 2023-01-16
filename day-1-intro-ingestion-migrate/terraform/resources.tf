@@ -5,7 +5,6 @@ resource "azurerm_resource_group" "rg-trn-cc-bg-azure" {
   location = "East US 2"
 }
 
-
 # create storage account [blob storage] Data Lake Gen2
 # account_kind = StorageV2 [Data lake gen2]
 resource "azurerm_storage_account" "trn-cc-bg-azure-stg" {
@@ -17,7 +16,7 @@ resource "azurerm_storage_account" "trn-cc-bg-azure-stg" {
   account_kind             = "StorageV2"
   is_hns_enabled           = "true"
 }
-/*
+
 # creating landing container - data coming from application [first contact]
 resource "azurerm_storage_container" "landing" {
   name                  = "landing"
@@ -26,7 +25,7 @@ resource "azurerm_storage_container" "landing" {
 }
 
 # creating processing container - data processed based on business needs [second contact]
-/*
+
 resource "azurerm_storage_container" "processing" {
   name                  = "processing"
   storage_account_name  = azurerm_storage_account.trn-cc-bg-azure-stg.name
