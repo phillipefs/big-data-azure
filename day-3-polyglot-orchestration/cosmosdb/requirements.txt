@@ -22,5 +22,5 @@ google-cloud-pubsub==2.6.0
 confluent_avro==1.8.0
 avro-python3==1.10.2
 pulsar-client==2.10.0
-fastapi==0.78.0
+fastapi==0.109.1
 uvicorn==0.18.2
